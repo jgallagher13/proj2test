@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'hylia_serif_betaregular';
+  src: url('../stylesheets/webfontkit/hyliaserifbeta-regular-webfont.woff2') format('woff2'),
+       url('../stylesheets/webfontkit/hyliaserifbeta-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'hylia_serif_betaregular';
   background-image: url('../images/hyrule.jpeg');
   background-size: cover;
   padding: 50px;
@@ -31,7 +40,12 @@ a {
   background-color: white;
 }
 
-
+#reviewstable {
+  border: 2px solid goldenrod; 
+  background-color: goldenrod;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 a:hover:not(.active) {
   color: white;
@@ -70,7 +84,7 @@ a.active {
 
 table thead th {
   padding: 5px;
-  border-bottom: 2px solid #424748;
+  border-bottom: 2px solid white;
 }
 
 table td {
@@ -82,6 +96,16 @@ table td {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
+  border: 2px solid goldenrod; 
+  background-color: goldenrod;
+  padding: 15px;
+  text-align: center;
+}
+
+#editlink {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #show-page ul {
@@ -124,4 +148,14 @@ button[type="submit"] {
 nav > img {
   width: 60px;
   object-fit: contain;
+}
+
+input:hover {
+  color: white;
+  background-color: navy; 
+}
+
+button:hover {
+  color: white;
+  background-color: navy; 
 }

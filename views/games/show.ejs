@@ -5,8 +5,10 @@
   <div><%= game.title %></div>
   <div>Release Year: </div>
   <div><%= game.releaseYear %></div>
-  <a href="/games/<%= game.id %>/edit">Edit Game Info</a>
+  
 </section>
+<br>
+<a id="editlink" href="/games/<%= game.id %>/edit">Edit Game Info</a>
 
 <br><br><h2>Reviews</h2>
 <form id="add-review-form" method="POST"
@@ -26,7 +28,7 @@
 
 
 <% if (game.reviews.length) { %>
-  <table>
+  <table id="reviewstable">
     <thead>
       <tr>
         <th>Date</th>
