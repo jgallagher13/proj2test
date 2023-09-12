@@ -1,4 +1,5 @@
 body {
+  background-image: url('../images/hyrule.jpeg');
   background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -25,13 +26,16 @@ a {
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  color: white;
+  color: navy;
   font-weight: bold;
+  background-color: white;
 }
+
+
 
 a:hover:not(.active) {
   color: white;
-  background-color: blue; 
+  background-color: navy; 
 }
 
 a.active {
